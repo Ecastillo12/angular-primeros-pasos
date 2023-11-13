@@ -1,26 +1,26 @@
 <h1>
-  Spiderman
+  {{ name }}
 </h1>
 
 <dl>
   <td>Nombre:</td>
-  <dd> nombre </dd>
+  <dd> {{ name }} </dd>
 
   <td>Edad:</td>
-  <dd> edad </dd>
+  <dd> {{ age }} </dd>
 
   <td>Metodo:</td>
-  <dd> algun metodo </dd>
+  <dd> {{ getHeroDescripton() }} </dd>
 
   <td>Capitalizado</td>
-  <dd> nombre capitalizado </dd>
+  <dd> {{ capitalizedName }} </dd>
 
 </dl>
 
-<button class = "btn btn-primary">
+<button (click)=" changeHero() " class="btn btn-primary mx-2">
   Cambiar nombre
 </button>
 
-<button class = "btn btn-primary">
+<button (click)=" changeAge() " class="btn btn-primary">
   Cambiar edad
 </button>
